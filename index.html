@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nizom — Мағоза</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">N</span>
+                <span>Nizom</span>
+            </div>
+            <button class="cart-btn" id="cartBtn">
+                🛒 <span id="cartCount">0</span>
+            </button>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <h1>Хуш омадед!</h1>
+            <p id="userGreeting">Маҳсулоти аълосифатро интихоб кунед</p>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories">
+            <div class="cat-item active" data-cat="all">Ҳама</div>
+            <div class="cat-item" data-cat="electronics">Электроника</div>
+            <div class="cat-item" data-cat="clothes">Либос</div>
+            <div class="cat-item" data-cat="home">Хона</div>
+        </section>
+
+        <!-- Products -->
+        <section class="products" id="productList">
+            <!-- filled by JS -->
+        </section>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Сабади харид</h2>
+                <button id="closeCart">×</button>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-footer">
+                <div class="total">Ҷамъ: <strong id="cartTotal">0 TJS</strong></div>
+                <button class="btn-order" id="orderBtn">Фармоиш додан</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
